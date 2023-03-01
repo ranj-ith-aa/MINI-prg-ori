@@ -214,7 +214,8 @@ ul li a:hover{
     width: 29vw;
     height: 360px;
     border: 2px solid black;
-    background-image: url("images/food1.jpeg"); 
+    background: url("images/food1.jpeg")no-repeat; 
+    background-size: contain;
     display: flex;
     justify-content:center;
     align-items:flex-end;
@@ -224,7 +225,8 @@ ul li a:hover{
     width: 29vw;
     height: 360px;
     border: 2px solid black;
-    background:url("images/dessert.jpeg");
+    background:url("images/dessert.jpeg")no-repeat;
+    background-size: contain;
     display: flex;
     justify-content:center;
     align-items:flex-end;
@@ -234,7 +236,8 @@ ul li a:hover{
     width: 30vw;
     height: 360px;
     border: 2px solid black;
-    background:url("images/mocktail.jpeg") ;
+    background:url("images/mocktail.jpeg")no-repeat ;
+    background-size: contain;
     display : flex;
     justify-content:center;
     align-items:flex-end;

@@ -2,20 +2,22 @@
 *{
     margin:0px;
     padding:0px;
+
+    background-color: #E7FBBE;
 }
 /*Header Styling*/
 
 #top{
-    color:rgb(245, 10, 10);
+    color:#7FB77E;
     text-align:center;
-    font-size:46px;
-    font-family: 'Ubuntu Mono', monospace;
+    font-size:90px;
+    font-family: 'Cardo', serif;
 }
 #top1{
     text-align:center;
     color:black;
-    font-size:21px;
-    font-family: 'Ubuntu Mono', monospace;
+    font-size:40px;
+    font-family: 'Special Elite', cursive;
 }
 /* Navigation bar styling*/
 
@@ -32,13 +34,13 @@
 #navbar{
     display:flex;
     flex-direction: column;
-    background-color: gray;
+    font-family: 'Special Elite', cursive;
     height: 14vh;
     width: 100vw;
-    font-family: 'Ubuntu Mono', monospace;
+    font-size: 20px;
     margin-top:10px;
-   border: 2px solid black;
-   border-radius:15px;
+    border: 2px solid black;
+    border-radius:15px;
 }
 
 
@@ -57,12 +59,12 @@ ul li{
 }
 ul li a{
     padding: 1px;
-    color:white;
+    color:black;
     text-decoration: none;
     border-radius:10px;
 }
 ul li a:hover{
-    background-color: red;
+    background-color: #5DC98E;
     border-radius: 10px;
 }
 
@@ -79,7 +81,7 @@ ul li a:hover{
 /*Setting the background image using before pseudo selector*/ 
 #container1::before{
     content:'';
-    background: url("./1.jpg") no-repeat center center/cover;
+
     width: 100vw;
     height:59vh;
     position: absolute;
@@ -100,20 +102,43 @@ ul li a:hover{
     font-size: 2rem;
     text-align: center;
     margin-top: 35px;
+    font-family: 'Special Elite', cursive;
+    color: #82954B;
 }
 /*Button Styling*/
 .btn{
-    margin-top:15px;
+    display: inline-block;
+  padding: 7px 15px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+
+
+
+
+    /*margin-top:15px;
     border: 3px solid white;
     border-radius:15px;
-    background-color:yellow;
+
     font-size:20px;
-    font-weight: bold;
-    font-family: 'Ubuntu Mono', monospace;
+    font-weight: bold;*/
+    font-family: 'Abhaya Libre', serif;
 }
+.btn:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
 .btn:hover{
     cursor: pointer;
-    background-color: red;
+    background-color: #28DF99;
 }
 
 
@@ -122,8 +147,9 @@ ul li a:hover{
     justify-content: space-evenly;
 }
 #row2{
-    width:24vw;
-    height:21vh;
+    width:16vw;
+    height:30vh;
+    background-image: url("images/chef.jpeg");
     box-shadow: 2px 7px 16px 19px;
      margin-top:51px;
      margin-bottom: 51px;
@@ -140,15 +166,17 @@ ul li a:hover{
     position: absolute;
     top: 0px;
     left:0px;
-    width: 24vw;
+    width: 4vw;
     height:21vh;
     z-index: -1;
     border-radius: 40px;
 }
 #row3{
     position: relative;
-    width: 24vw;
-    height:21vh;
+    width: 16vw;
+    height:30vh;
+    background-image: url("images/pizza.jpeg");
+    background-size: auto;
     display: flex;
     justify-content: center;
      align-items: flex-end;
@@ -165,7 +193,7 @@ ul li a:hover{
     position: absolute;
     top:0px;
     left:0px;
-    width: 24vw;
+    width: 14vw;
     height:21vh;
     z-index: -1;
     border-radius: 40px;
@@ -173,8 +201,9 @@ ul li a:hover{
 
 #top3{
     text-align: center;
-    color:red;
-    font-family: 'Ubuntu Mono', monospace;
+    margin-top: 25px;
+    color:#4A503D;
+    font-family: 'Special Elite', cursive;
 }
 #container4{
     display: grid;
@@ -185,7 +214,7 @@ ul li a:hover{
     width: 29vw;
     height: 360px;
     border: 2px solid black;
-    background:url('a1.jpeg') no-repeat center center/cover; 
+    background-image: url("images/food1.jpeg"); 
     display: flex;
     justify-content:center;
     align-items:flex-end;
@@ -195,7 +224,7 @@ ul li a:hover{
     width: 29vw;
     height: 360px;
     border: 2px solid black;
-    background:url('a2.jpeg') no-repeat center center/cover;
+    background:url("images/dessert.jpeg");
     display: flex;
     justify-content:center;
     align-items:flex-end;
@@ -205,8 +234,8 @@ ul li a:hover{
     width: 30vw;
     height: 360px;
     border: 2px solid black;
-    background:url('a3.jpeg') no-repeat center center/cover;
-    display: flex;
+    background:url("images/mocktail.jpeg") ;
+    display : flex;
     justify-content:center;
     align-items:flex-end;
     border-radius: 15px;
@@ -214,6 +243,9 @@ ul li a:hover{
 /*Designing the footer*/
 footer{
     text-align: center;
+    font-family: 'Special Elite', cursive;
+    color: #184D47;
+
 }
 /*Designing of Contact Us*/
 #ContactUs{
@@ -233,6 +265,7 @@ footer{
     color:gray;
 }
 /*Making the webpage responsive using media queries*/
+/*
 @media only screen and (max-width:1131px){
     #row4{
         width: 42vw;
@@ -296,4 +329,4 @@ footer{
     #container1{
         height:44vh
     }
-}
+}*/

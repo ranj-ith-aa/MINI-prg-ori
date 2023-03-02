@@ -39,8 +39,8 @@
     width: 100vw;
     font-size: 20px;
     margin-top:10px;
-    border: 2px solid black;
-    border-radius:15px;
+   /* border: 2px solid black;
+    border-radius:15px;*/
 }
 
 
@@ -87,7 +87,7 @@ ul li a:hover{
     position: absolute;
     top:0px;
     left: 0px;
-    font-family: 'Ubuntu Mono', monospace;
+    font-family: 'Special Elite', cursive;
     margin-right:45px;
     font-weight: bold;
     z-index: -1;
@@ -149,7 +149,8 @@ ul li a:hover{
 #row2{
     width:16vw;
     height:30vh;
-    background-image: url("images/chef.jpeg");
+    background: url("images/chef.jpeg")no-repeat;
+    background-size: contain ;
     box-shadow: 2px 7px 16px 19px;
      margin-top:51px;
      margin-bottom: 51px;
@@ -162,7 +163,7 @@ ul li a:hover{
 }
 #row2::before{
     content: '';
-    background: url('2.jpeg') no-repeat center center/cover;
+    background: url("images/chef.jpeg")no-repeat; 
     position: absolute;
     top: 0px;
     left:0px;
@@ -175,7 +176,8 @@ ul li a:hover{
     position: relative;
     width: 16vw;
     height:30vh;
-    background-image: url("images/pizza.jpeg");
+    background: url("images/pizza.jpeg")no-repeat;
+    background-size: contain;
     background-size: auto;
     display: flex;
     justify-content: center;
@@ -189,7 +191,7 @@ ul li a:hover{
 }
 #row3::before{
     content: '';
-    background: url('3.jpeg') no-repeat center center/cover;
+    background:  url("images/pizza.jpeg")no-repeat;
     position: absolute;
     top:0px;
     left:0px;
@@ -248,10 +250,46 @@ footer{
     text-align: center;
     font-family: 'Special Elite', cursive;
     color: #184D47;
+    font-size: 15px;
+    margin-bottom: 9px;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Designing of Contact Us*/
-#ContactUs{
+/*#ContactUs{
     width:100vw;
     height:100vh;
     display:flex;
@@ -264,72 +302,6 @@ footer{
    padding: 0.5rem;
 }
 /*Changing the color of placeholder*/
-::placeholder{                  
+/*::placeholder{                  
     color:gray;
-}
-/*Making the webpage responsive using media queries*/
-/*
-@media only screen and (max-width:1131px){
-    #row4{
-        width: 42vw;
-    }
-    #row5{
-        width:45vw;
-    }
-    #row6{
-        margin-top: 20px;
-        width:90vw;
-    }
-}
-@media only screen and (min-width:600px) and (max-width:781px)
-{
-    #row4{
-        width:84vw;
-        margin: auto;
-        margin-left: 22px;
-    }
-    #row5{
-        
-        width:84vw;
-        margin: auto;
-        margin-top: 20px;
-        margin-left: 22px;
-    }
-    #row6{
-        width:84vw;
-        margin: auto;
-        margin-top: 20px;
-        margin-left: 22px;
-    }
-}
-@media only screen and (max-width:600px){
-    #row4{
-        width:78vw;
-        margin: auto;
-        margin-left: 3px;
-    }
-    #row5{
-        
-        width:78vw;
-        margin: auto;
-        margin-top: 20px;
-        margin-left: 3px;
-    }
-    #row6{
-        width:78vw;
-        margin: auto;
-        margin-top: 20px;
-        margin-left: 3px;
-    }
-}
-@media only screen and (min-height:1000px){
-    #navbar{
-        height:10vh;
-    }
-    #container1::before{
-        height:39vh;
-    }
-    #container1{
-        height:44vh
-    }
 }*/
